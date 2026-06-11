@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolCash – The Smartest Way to Bank</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <!-- LOGO -->
+      <a href="index.html" class="logo" aria-label="SolCash Home">
+        <span class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="15" fill="#2ECC71" stroke="#27AE60" stroke-width="1.5"/>
+            <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="13" font-family="Syne,sans-serif" font-weight="800">S</text>
+          </svg>
+        </span>
+        <span class="logo-text">Sol<span class="logo-accent">Cash</span></span>
+      </a>
+
+      <!-- NAV -->
+      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              Company <i class="fa fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-link"><i class="fa fa-building"></i> About</a></li>
+              <li><a href="contact.html" class="dropdown-link"><i class="fa fa-envelope"></i> Contact</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              Business <i class="fa fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="buy-shop.html" class="dropdown-link"><i class="fa fa-shopping-cart"></i> Buy and Shop</a></li>
+              <li><a href="send-receive.html" class="dropdown-link"><i class="fa fa-paper-plane"></i> Send and Receive Money</a></li>
+              <li><a href="bill-payment.html" class="dropdown-link"><i class="fa fa-file-invoice-dollar"></i> Bill Payment</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              Newsroom <i class="fa fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="blog.html" class="dropdown-link"><i class="fa fa-newspaper"></i> Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-nav-cta">Open Account</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <span class="hero-badge">🚀 Banking, Reimagined</span>
+        <h1 class="hero-title">The Smartest Way to Bank is Here</h1>
+        <p class="hero-para">Tools to help you pay, earn, save, and grow — all in one place, with zero hidden fees.</p>
+        <a href="contact.html" class="btn-hero">Get Started with SolCash</a>
+        <div class="hero-stats">
+          <div class="stat"><strong>2M+</strong><span>Active users</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>₦0</strong><span>Transfer fees</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>20%</strong><span>Savings interest</span></div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-img-wrap">
+          <div class="hero-img-blob"></div>
+          <div class="hero-phone-card">
+            <div class="phone-card-inner">
+              <div class="phone-card-logo">
+                <svg width="22" height="22" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" fill="#2ECC71"/><text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="13" font-family="Syne,sans-serif" font-weight="800">S</text></svg>
+                SolCash
+              </div>
+              <div class="phone-card-balance-label">Total Balance</div>
+              <div class="phone-card-balance">₦ 4,820,500.00</div>
+              <div class="phone-card-actions">
+                <button>Send</button>
+                <button>Receive</button>
+                <button>Save</button>
+              </div>
+              <div class="phone-card-txn">
+                <div class="txn-item"><span class="txn-icon green"><i class="fa fa-arrow-down"></i></span><span class="txn-label">Salary Credit</span><span class="txn-amt green">+₦500,000</span></div>
+                <div class="txn-item"><span class="txn-icon red"><i class="fa fa-arrow-up"></i></span><span class="txn-label">Airtime</span><span class="txn-amt red">-₦2,000</span></div>
+                <div class="txn-item"><span class="txn-icon green"><i class="fa fa-arrow-down"></i></span><span class="txn-label">Interest</span><span class="txn-amt green">+₦12,450</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-badge badge1">✅ Transfer sent!</div>
+          <div class="floating-badge badge2">💰 +₦12,450 interest</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES CARDS ===== -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Everything you need, <span class="green-text">nothing you don't</span></h2>
+        <p class="section-sub">SolCash brings all your financial tools under one powerful roof.</p>
+      </div>
+      <div class="cards-grid">
+
+        <div class="feature-card">
+          <div class="card-img-wrap">
+            <img src="/images/girl8d8a28aa-9ae2-47.jpg" alt="Two persons pressing phone" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-heading">Stop paying to send money</h3>
+            <p class="card-para">SolCash gives you unlimited free bank transfer — no daily limit, no hidden fees.</p>
+            <span class="card-span"><i class="fa fa-check-circle"></i> 98% success rate within 10 seconds</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-img-wrap">
+            <img src="/images/friendde28b7a3-ba24-40.jpg" alt="Man pressing phone" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-heading">Earn up to 20% on your savings</h3>
+            <p class="card-para">You work hard for your money. We work just as hard for you. Pick flexible and fixed plans to reach your goals faster.</p>
+            <span class="card-span"><i class="fa fa-check-circle"></i> Interest paid daily. Withdraw anytime.</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-img-wrap">
+            <img src="./images/AllBankAccepted.11h0052wh8slw.png" alt="Woman smiling" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-heading">A debit card that works</h3>
+            <p class="card-para">Shop online &amp; in-store. Enjoy lower fees and exclusive merchant offers wherever you are.</p>
+            <span class="card-span"><i class="fa fa-check-circle"></i> Transact &amp; earn rewards daily</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-img-wrap">
+            <img src="./images/boy7507e911-efb3-48.jpg" alt="Two men smiling" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-heading">Get credit when you need it</h3>
+            <p class="card-para">With instant approval and transparent pricing, credit on SolCash helps you move forward confidently.</p>
+            <span class="card-span"><i class="fa fa-check-circle"></i> Fuel your next move</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-img-wrap">
+            <img src="./images/HighCommissions.0ly7.x2klcoq-.png" alt="Man smiling" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-heading">Cashback on bills &amp; more</h3>
+            <p class="card-para">From airtime and bills to shopping, get extra value every time you pay with SolCash.</p>
+            <span class="card-span"><i class="fa fa-check-circle"></i> Transact &amp; earn rewards daily</span>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="card-img-wrap">
+            <img src="./images/famlily4e071cff-a8b0-45.jpg" alt="Family laughing together" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-heading">Life happens. Be covered.</h3>
+            <p class="card-para">Get quick, reliable protection for health, phones, and more — no paperwork needed.</p>
+            <span class="card-span"><i class="fa fa-check-circle"></i> Interest paid daily. Withdraw anytime.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="testi-top">
+        <div class="testi-count-block">
+          <span class="testi-number">2,000,000+</span>
+          <span class="testi-label">Nigerians love banking with SolCash</span>
+        </div>
+        <div class="testi-stars">
+          <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          <span>4.9 / 5 average rating</span>
+        </div>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-avatar">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80" alt="User Amaka" />
+          </div>
+          <div class="testi-content">
+            <div class="testi-quote-icon"><i class="fa fa-quote-left"></i></div>
+            <p class="testi-text">SolCash changed how I manage money. The savings interest is real — I watched my money grow day by day! No hidden charges, just pure value.</p>
+            <div class="testi-meta">
+              <strong>Amaka O.</strong>
+              <span>Small Business Owner, Lagos</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-avatar">
+            <img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=100&q=80" alt="User Tunde" />
+          </div>
+          <div class="testi-content">
+            <div class="testi-quote-icon"><i class="fa fa-quote-left"></i></div>
+            <p class="testi-text">I send money to my family back home every week. With SolCash, transfers are instant and FREE. I've saved over ₦50,000 in fees already this year!</p>
+            <div class="testi-meta">
+              <strong>Tunde A.</strong>
+              <span>Software Engineer, Abuja</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <!-- Logo -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo" aria-label="SolCash Home">
+            <span class="logo-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" fill="#2ECC71" stroke="#27AE60" stroke-width="1.5"/><text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="13" font-family="Syne,sans-serif" font-weight="800">S</text></svg>
+            </span>
+            <span class="logo-text">Sol<span class="logo-accent">Cash</span></span>
+          </a>
+          <p class="footer-tagline">The smartest way to bank. Pay, earn, save and grow — all in one app.</p>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Business Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Business</h4>
+          <ul class="footer-links">
+            <li><a href="buy-shop.html">Buy and Shop</a></li>
+            <li><a href="send-receive.html">Send and Receive Money</a></li>
+            <li><a href="bill-payment.html">Bill Payment</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsroom Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Newsroom</h4>
+          <ul class="footer-links">
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 SolCash Financial Services. All rights reserved. Licensed by CBN.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

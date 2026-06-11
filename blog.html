@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – SolCash Newsroom</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="SolCash Home">
+        <span class="logo-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" fill="#2ECC71" stroke="#27AE60" stroke-width="1.5"/><text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="13" font-family="Syne,sans-serif" font-weight="800">S</text></svg></span>
+        <span class="logo-text">Sol<span class="logo-accent">Cash</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-trigger">Company <i class="fa fa-chevron-down nav-arrow"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-link"><i class="fa fa-building"></i> About</a></li>
+              <li><a href="contact.html" class="dropdown-link"><i class="fa fa-envelope"></i> Contact</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-trigger">Business <i class="fa fa-chevron-down nav-arrow"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="buy-shop.html" class="dropdown-link"><i class="fa fa-shopping-cart"></i> Buy and Shop</a></li>
+              <li><a href="send-receive.html" class="dropdown-link"><i class="fa fa-paper-plane"></i> Send and Receive Money</a></li>
+              <li><a href="bill-payment.html" class="dropdown-link"><i class="fa fa-file-invoice-dollar"></i> Bill Payment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-trigger active">Newsroom <i class="fa fa-chevron-down nav-arrow"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="blog.html" class="dropdown-link"><i class="fa fa-newspaper"></i> Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn-nav-cta">Open Account</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="hero-badge">📰 SolCash Newsroom</span>
+      <h1 class="page-hero-title">Insights, Tips &amp; <span class="green-text">Updates</span></h1>
+      <p class="page-hero-sub">Stay informed with the latest fintech news, money tips, and SolCash product updates written for everyday Nigerians.</p>
+    </div>
+  </section>
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section class="blog-section">
+    <div class="container">
+
+      <!-- FEATURED POST -->
+      <div class="blog-featured">
+        <div class="blog-featured-img">
+          <img src="./images/Performance.0ngupyr5rcvd0.png" alt="Featured: Financial freedom in Nigeria" loading="lazy" />
+          <span class="blog-tag featured-tag">Featured</span>
+        </div>
+        <div class="blog-featured-content">
+          <span class="blog-tag">Finance Tips</span>
+          <h2 class="blog-featured-title">How to Build Your First ₦1 Million Emergency Fund in Nigeria</h2>
+          <p class="blog-featured-excerpt">Many Nigerians live paycheck to paycheck without any financial cushion. Here's the exact step-by-step guide our financial experts recommend — and how SolCash's high-yield savings can help you get there faster than you think.</p>
+          <div class="blog-card-meta">
+            <span><i class="fa fa-user"></i> Adaeze Nwosu</span>
+            <span><i class="fa fa-calendar"></i> June 2, 2025</span>
+            <span><i class="fa fa-clock"></i> 8 min read</span>
+          </div>
+          <a href="#" class="btn-green" style="margin-top:20px;display:inline-block;">Read Full Article</a>
+        </div>
+      </div>
+
+      <!-- SEARCH & FILTER -->
+      <div class="blog-filter-bar">
+        <div class="blog-search">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search articles…" oninput="filterBlog(this.value)" />
+        </div>
+        <div class="blog-filter-tags">
+          <button class="filter-tag active" onclick="setFilter('all', this)">All</button>
+          <button class="filter-tag" onclick="setFilter('savings', this)">Savings</button>
+          <button class="filter-tag" onclick="setFilter('transfers', this)">Transfers</button>
+          <button class="filter-tag" onclick="setFilter('product', this)">Product</button>
+          <button class="filter-tag" onclick="setFilter('investment', this)">Investment</button>
+        </div>
+      </div>
+
+      <!-- BLOG GRID -->
+      <div class="blog-grid" id="blog-grid">
+
+        <div class="blog-card" data-category="savings">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&q=80" alt="Savings tips" loading="lazy" />
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Savings</span>
+            <h3 class="blog-card-title">5 Habits That Will Make You Richer This Year</h3>
+            <p class="blog-card-excerpt">Small consistent actions compound into life-changing results. These five daily financial habits are backed by data from over 100,000 SolCash savers.</p>
+            <div class="blog-card-meta">
+              <span><i class="fa fa-user"></i> Kemi Adeyemi</span>
+              <span><i class="fa fa-clock"></i> 5 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="transfers">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=500&q=80" alt="Money transfers" loading="lazy" />
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Transfers</span>
+            <h3 class="blog-card-title">How Much Are You Really Paying in Bank Transfer Fees?</h3>
+            <p class="blog-card-excerpt">We did the math. The average Nigerian loses over ₦18,000 a year on transfer fees. Here's how to stop the bleeding immediately.</p>
+            <div class="blog-card-meta">
+              <span><i class="fa fa-user"></i> Tunde Fashola</span>
+              <span><i class="fa fa-clock"></i> 4 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="product">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&q=80" alt="SolCash app update" loading="lazy" />
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Product</span>
+            <h3 class="blog-card-title">Introducing SolCash 3.0 — The Biggest Update Yet</h3>
+            <p class="blog-card-excerpt">Faster transfers, redesigned savings dashboard, AutoPay, and a brand-new credit scoring engine. Here's everything that's new in SolCash 3.0.</p>
+            <div class="blog-card-meta">
+              <span><i class="fa fa-user"></i> SolCash Team</span>
+              <span><i class="fa fa-clock"></i> 6 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="investment">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=80" alt="Investment guide" loading="lazy" />
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Investment</span>
+            <h3 class="blog-card-title">Beginner's Guide to Investing in Nigeria in 2025</h3>
+            <p class="blog-card-excerpt">You don't need millions to start investing. This beginner-friendly guide covers T-Bills, mutual funds, and how SolCash Savings fits into your investment strategy.</p>
+            <div class="blog-card-meta">
+              <span><i class="fa fa-user"></i> Ngozi Okonkwo</span>
+              <span><i class="fa fa-clock"></i> 10 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="savings">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=500&q=80" alt="Students and money" loading="lazy" />
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Savings</span>
+            <h3 class="blog-card-title">How Nigerian Students Can Start Saving ₦5,000/Month</h3>
+            <p class="blog-card-excerpt">Tight budget? No problem. We break down exactly how to save consistently on a student's income — and why even small savings compound enormously over time.</p>
+            <div class="blog-card-meta">
+              <span><i class="fa fa-user"></i> Emmanuel Eze</span>
+              <span><i class="fa fa-clock"></i> 7 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="product">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&q=80" alt="Security feature" loading="lazy" />
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Product</span>
+            <h3 class="blog-card-title">How SolCash Keeps Your Money Safe — A Deep Dive</h3>
+            <p class="blog-card-excerpt">From 256-bit encryption to biometric login and CBN licensing — here's every layer of security SolCash uses to protect your funds and data.</p>
+            <div class="blog-card-meta">
+              <span><i class="fa fa-user"></i> Adaeze Nwosu</span>
+              <span><i class="fa fa-clock"></i> 9 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="investment">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=500&q=80" alt="Real estate" loading="lazy" />
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Investment</span>
+            <h3 class="blog-card-title">Real Estate vs Savings Account: Where Should You Put Your Money?</h3>
+            <p class="blog-card-excerpt">We compare two of Nigeria's most popular investment paths — and reveal which gives you better returns in 2025 based on current market data.</p>
+            <div class="blog-card-meta">
+              <span><i class="fa fa-user"></i> Chukwuemeka Obi</span>
+              <span><i class="fa fa-clock"></i> 12 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="transfers">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=500&q=80" alt="International transfer" loading="lazy" />
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Transfers</span>
+            <h3 class="blog-card-title">Sending Money Home from Abroad: The Cheapest Ways in 2025</h3>
+            <p class="blog-card-excerpt">Diaspora remittances to Nigeria hit $20B in 2024. Here's the most cost-effective way to support your family back home without losing money to fees.</p>
+            <div class="blog-card-meta">
+              <span><i class="fa fa-user"></i> Ifeanyi Okeke</span>
+              <span><i class="fa fa-clock"></i> 6 min</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-category="savings">
+          <div class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=500&q=80" alt="Budget planning" loading="lazy" />
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-tag">Savings</span>
+            <h3 class="blog-card-title">The 50/30/20 Budget Rule — Adapted for Nigeria</h3>
+            <p class="blog-card-excerpt">The classic budgeting framework works — but needs adjustments for Nigeria's inflation, irregular income, and family obligations. Here's our adapted version.</p>
+            <div class="blog-card-meta">
+              <span><i class="fa fa-user"></i> Kemi Adeyemi</span>
+              <span><i class="fa fa-clock"></i> 8 min</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOAD MORE -->
+      <div class="blog-load-more">
+        <button class="btn-load-more" onclick="this.textContent='Loading…'">Load More Articles</button>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="newsletter-section">
+        <div class="newsletter-content">
+          <span class="section-eyebrow">Stay Informed</span>
+          <h2>Get weekly money tips <span class="green-text">in your inbox</span></h2>
+          <p>Join 200,000+ Nigerians who receive our weekly financial insights newsletter — free, forever.</p>
+          <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="Enter your email address" required />
+            <button type="submit">Subscribe Free</button>
+          </form>
+          <p class="newsletter-note"><i class="fa fa-lock"></i> No spam, ever. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" fill="#2ECC71" stroke="#27AE60" stroke-width="1.5"/><text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="13" font-family="Syne,sans-serif" font-weight="800">S</text></svg></span>
+            <span class="logo-text">Sol<span class="logo-accent">Cash</span></span>
+          </a>
+          <p class="footer-tagline">The smartest way to bank. Pay, earn, save and grow — all in one app.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Business</h4>
+          <ul class="footer-links">
+            <li><a href="buy-shop.html">Buy and Shop</a></li>
+            <li><a href="send-receive.html">Send and Receive Money</a></li>
+            <li><a href="bill-payment.html">Bill Payment</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Newsroom</h4>
+          <ul class="footer-links"><li><a href="blog.html">Blog</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms and Conditions</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 SolCash Financial Services. All rights reserved. Licensed by CBN.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="main.js"></script>
+  <script>
+    function setFilter(cat, btn) {
+      document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.blog-card').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.category === cat) ? '' : 'none';
+      });
+    }
+    function filterBlog(val) {
+      const q = val.toLowerCase();
+      document.querySelectorAll('.blog-card').forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(q) ? '' : 'none';
+      });
+    }
+    function subscribeNewsletter(e) {
+      e.preventDefault();
+      e.target.innerHTML = '<p style="color:var(--green-mid);font-weight:700;font-size:1rem;">🎉 You\'re subscribed! Check your inbox.</p>';
+    }
+  </script> -->
+</body>
+</html>
